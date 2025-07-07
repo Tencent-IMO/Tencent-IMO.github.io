@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DRP-IMO: Decoupled Reasoning and Proving</title>
+  <title>Decoupled Reasoning and Proving for Proving IMO Problems</title>
     <style>
         .hidden {
             display: none;
@@ -142,9 +142,9 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <!-- 替换为论文中的核心流程图 -->
-      <img src="static/images/pipeline.png" alt="DRP-IMO Pipeline" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
+      <img src="static/images/pipeline.png" alt="Pipeline" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"/>
       <h2 class="subtitle has-text-centered" style="margin-top: 1rem;">
-        The overall pipeline of our DRP-IMO framework, which decouples high-level reasoning from low-level proof generation.
+        The overall pipeline of our framework, which decouples high-level reasoning from low-level proof generation.
       </h2>
     </div>
     </div>
@@ -171,7 +171,7 @@
 <!-- Framework Section -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
-    <h1 class="title is-1 mmmu">The DRP-IMO Framework</h1>
+    <h1 class="title is-1 mmmu">The Framework</h1>
   </div>
 </section>
 
@@ -216,7 +216,7 @@
         <h2 class="title is-3">🏆 Solving Grandmaster-Level IMO Problems</h2>
         <div class="content has-text-justified">
           <p>
-            We evaluate our approach on a challenging benchmark of non-geometry IMO problems from 2000 to 2024. To the best of our knowledge, no existing open-source automated theorem prover has reported success on any problem from this set. In a stark demonstration of its effectiveness, our DRP-IMO framework successfully solves <b>5 of these problems</b>:
+            We evaluate our approach on a challenging benchmark of non-geometry IMO problems from 2000 to 2024. To the best of our knowledge, no existing open-source automated theorem prover has reported success on any problem from this set. In a stark demonstration of its effectiveness, our framework successfully solves <b>5 of these problems</b>:
           </p>
           <ul>
             <li><b>IMO 2000 Problem 2</b></li>
@@ -288,11 +288,11 @@
                 <h2 class="title is-3 has-text-centered">Generated Lean Proof</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Below is the full, machine-generated proof for IMO 2019 Problem 1, as constructed by our DRP-IMO framework. The proof is composed of several strategic lemmas (e.g., `prop_f_f_x`, `prop_f_2x`, `prop_cauchy_like`) that were first proposed by the Reasoner and then formally proven by the Prover. These verified lemmas were then used to construct the final proof of the main theorem.
+                        Below is the full, machine-generated proof for IMO 2019 Problem 1, as constructed by our framework. The proof is composed of several strategic lemmas (e.g., `prop_f_f_x`, `prop_f_2x`, `prop_cauchy_like`) that were first proposed by the Reasoner and then formally proven by the Prover. These verified lemmas were then used to construct the final proof of the main theorem.
                     </p>
                 </div>
                 <pre><code>
--- Solution to IMO 2019 P1 by DRP-IMO
+-- Solution to IMO 2019 P1
 import Mathlib
 import Aesop
 set_option maxHeartbeats 0
